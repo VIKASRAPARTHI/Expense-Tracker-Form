@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #1e1e1e;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.new-expense {
+  background: linear-gradient(135deg, #9b7dc5, #5a1a8b);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  width: 50%;
+}
+
+.new-expense input {
+  width: 90%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.new-expense button {
+  background: #7a2ebf;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.new-expense button:hover {
+  background: #9153d3;
+}
+
+.expense-filter {
+  background: #222;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+  width: 50%;
+}
+
+.expense-filter label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.expense-filter select {
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #5a1a8b;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.expense-filter select:hover {
+  background: #7a2ebf;
+}
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+  width: 50%;
+}
+
+.expense-list__fallback {
+  color: #ddd;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* 💰 Expense Item */
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2a2a2a;
+  padding: 1.2rem;
+  border-radius: 12px;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.expense-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.expense-item__date {
+  background: #3a3a3a;
+  padding: 0.8rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #ddd;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 80px;
+}
+
+.expense-item__title {
+  flex: 1;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}
+
+.expense-item__price {
+  background: #7a2ebf;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.expense-item__price:hover {
+  background: #9153d3;
+}
+
